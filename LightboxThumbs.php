@@ -3,7 +3,7 @@
  * LightboxThumbs extension
  * by Alexander, http://www.mediawiki.org/wiki/User:Alxndr
  * Changes/Bug Fixes made by Kinsey Moore and Rgoodermote
- * Changes/Compatibility for MW 1.16 by Michael Markert
+ * Changes/Compatibility for MW 1.16 by Michael Markert and Aczs
  *
  * Displays thumbnailed images full-size in window
  * using Lokesh Dhakar's Lightbox 2 (http://www.lokeshdhakar.com/projects/lightbox2/)
@@ -14,15 +14,7 @@
  * Requirements: MW 1.16 (older versions of this extension still available)
  *               Lightbox 2
  *
- * Bugs: will make very large images take over your screen! doesn't do any resizing
- *       if there are multiple galleries on one page, they are treated as being part of one big slideshow
- *       will probably break on images with a / or ? in the name
- *       probably eats a lot of resources if you have a ton of thumbnails in a page...
- *
- * Todo: make galleries register as separate slideshows
- *       only add hook if there's a thumbnail in the page
- *       change thumbnail caption source to preserve markup, like galleries
- *       make Lightbox not react to right-click
+ * Bugs & todo: https://github.com/alxndr/LightboxThumbs/issues
  */
 
 if ( !defined( 'MEDIAWIKI' ) )
@@ -30,7 +22,7 @@ if ( !defined( 'MEDIAWIKI' ) )
 
 $wgExtensionCredits['other'][] = array(
   'name'        => 'LightboxThumbs',
-  'url'         => 'http://www.mediawiki.org/wiki/Extension:LightboxThumbs',
+  'url'         => 'https://github.com/alxndr/LightboxThumbs',
   'author'      => '[http://www.mediawiki.org/wiki/User:Alxndr Alexander], (alxndr+mediawiki@gmail.com) and others',
   'description' => 'Displays full-size images with [http://www.lokeshdhakar.com/projects/lightbox2/ Lightbox 2] when clicking on thumbnails.',
   'version'     => '0.1.4.1'
