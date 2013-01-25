@@ -21,9 +21,7 @@ Images in galleries are treated as being part of a slideshow, and have "previous
 
 ## Bugs
 
-* Very large images may take over your screen! That is, it doesn't do any resizing.
-* If there are multiple galleries on one page, they are treated as being part of one big slideshow.
-* May not work with images that have slashes in the name.
+...are kept track of with [Issues](https://github.com/alxndr/LightboxThumbs/issues)
 
 
 ## Caveat ūsor
