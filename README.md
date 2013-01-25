@@ -17,7 +17,7 @@ Images in galleries are treated as being part of a slideshow, and have "previous
         $lightboxThumbsFilesDir = '/extensions/lightbox';
         include_once("$IP/extensions/LightboxThumbs.php");
 
-\* If for some reason you're running MW 1.10 or earlier, try using v0.1.2. If you're between 1.11 and 1.15, try v0.1.3.
+\* If for some reason you're running MW 1.10 or earlier, try using [v0.1.2](https://github.com/alxndr/LightboxThumbs/tree/v0.1.2). If you're between 1.11 and 1.15, try [v0.1.3](https://github.com/alxndr/LightboxThumbs/tree/v0.1.3a).
 
 ## Bugs
 
