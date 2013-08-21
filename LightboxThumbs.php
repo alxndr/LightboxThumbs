@@ -94,7 +94,7 @@ function efBeforePageDisplay($out) {
     (?(?=<div\s*class="gallerybox)                                  ## IF GALLERY THEN
       <div\s*class="(gallery).+?                                      #$1: gallery
       (<a[^>]+?)                                                      #$2: opening a tag
-      \s*href="[^"]*(?:'.urlencode($wgContLang->namespaceNames[6]).')
+      \s*href="[^"]*(?:'.urlencode($wgContLang->getNsText(NS_FILE)).')
       ([^"\/]+)                                                       #$3: Image Name
       "\s*class="image"\s*
       ([^>]*>.+?<div\s*class="gallerytext">)                          #$4: end of open a through start of caption
@@ -104,7 +104,7 @@ function efBeforePageDisplay($out) {
     |                                                       ## ELSE
       #$1 to $5 unmatched (see above)
       (<a[^>]+?)                                                      #$6: opening a tag
-      \s*href="[^"]*(?:'.urlencode($wgContLang->namespaceNames[6]).')
+      \s*href="[^"]*(?:'.urlencode($wgContLang->getNsText(NS_FILE)).')
       ([^"\/]+)                                                       #$7: imageName
       "\s*class="image"\s*
       (title="([^"]+)")?                                              #$8 & $9: optional title ($8:HTML, $9:TXT)
